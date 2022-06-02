@@ -1,24 +1,23 @@
 	/*
-	 * file: 4puts.c
-	 *Liambila Hezron <@alxschool.com>
+	 * File: 4-puts.c
+	 * Hezron LIambila <alxschool.com>
 	 */
+#include <stdio.h>
 
-	#include <stdio.h>
+/**
+ * * main -prints "programming is like building a multilingual
+ *                puzzle, followed by a line.
+ *  *
+ *   
+ *   *
+ *    
+ *     *Return: always 0.
+ *
+ *      */
+int main(void)
+{
 
-	/**
-	 * main-prints "programming is building a multlingual 
-	 *              puzzle, followed by new line.
-	 *
- 	* Return: Always 0.
-	 */
-	int main(void)
-	{
-        	puts("\"programming is like building a multilingual puzzle");
+       	       puts("\"programming is like a multilingual puzzle");
 
-		return (0);
-	}
-
-
- 
-
- 
+		       return (0);
+}		       
