@@ -3,16 +3,15 @@
 #include <stdio.h>
 
 /**
- * main - Prints a random number and states number sign
+ * main - prints a random number from variable
  *
- *
- * Return: Always 0 (success)
+ * Return: Always 0
  */
-int main(voi)
+int main(void)
 {
-	int n;
+	int num;
 
-	srand(time));
+	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 
 	if (n > 0)
@@ -21,7 +20,6 @@ int main(voi)
 		printf("%d is negative\n", n);
 	else
 		printf("%d is zero\n", n);
+
 	return (0);
-
 }
-
