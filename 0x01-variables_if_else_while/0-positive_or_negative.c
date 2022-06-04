@@ -3,13 +3,14 @@
 #include <stdio.h>
 
 /**
- * main - prints a random number from variable
+ * main - prints a random number
+ *
  *
  * Return: Always 0
  */
 int main(void)
 {
-	int num;
+	int n;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
