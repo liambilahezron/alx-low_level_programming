@@ -1,10 +1,9 @@
 #include <stdio.h>
-#include <stdio.h>
 
 /**
  * main - prints exactly and that piece of art is useful
  *
- * Return: Always 0
+ * Return: Always 1
  */
 int main(void)
 {
