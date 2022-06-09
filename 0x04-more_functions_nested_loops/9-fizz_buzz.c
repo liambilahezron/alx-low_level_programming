@@ -1,10 +1,9 @@
 #include <stdio.h>
-
 /**
- * main - entry block
- * @void: no argument
- * Return: 0 success
- */
+* main - entry block
+* @void: no argument
+* Return: 0 success
+*/
 int main(void)
 {
 	int i;
@@ -24,10 +23,10 @@ int main(void)
 		}
 		else
 		{
-			printf("%d", i);
+			printf("%d ", i);
 		}
 	printif("Buzz");
-	printf("\n);
+	printf("\n");
 	return (0);
 }
 
