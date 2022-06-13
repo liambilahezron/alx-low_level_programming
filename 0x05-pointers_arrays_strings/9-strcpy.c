@@ -7,6 +7,7 @@
  * @src: poiter
  * Return: numbers dest
  */
+
 char *_strcpy(char *dest, char *src)
 {
 	int i;
