@@ -1,8 +1,9 @@
 #include "main.h"
 
 /**
- * leet - encode string to the 1337
+ * leet - Encodes string to the 1337
  * @str: string to be encoded
+ *
  * Return: A pointer to the encoded string
  */
 char *leet(char *str)
@@ -19,7 +20,7 @@ char *leet(char *str)
 				str[indx1] = indx2 + '0';
 		}
 
-		index1++;
+		indx1++;
 	}
 
 	return (str);
