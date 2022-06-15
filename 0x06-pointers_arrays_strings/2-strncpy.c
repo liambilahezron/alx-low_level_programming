@@ -1,11 +1,12 @@
 #include "main.h"
 
 /**
- * _strcpy - two  words
- * @dest : pointer to char params
- * @src : pointer to char params
- * @n : int params
- * Return: *dest
+ * _strncpy - copy a string
+ * @dest: input value
+ * @src: input value
+ * @n : input value
+ *
+ * Return: dest
  */
 
 char *_strncpy(char *dest, char *src, int n)
