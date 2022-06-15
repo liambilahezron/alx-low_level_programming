@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _strncpy - two words
+ * _strcpy - two  words
  * @dest : pointer to char params
  * @src : pointer to char params
  * @n : int params
