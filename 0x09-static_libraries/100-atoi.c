@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
  * _atoi - int
  * @s: pointer
@@ -23,7 +22,7 @@ int _atoi(char *s)
 			brk = 1;
 		}
 		else if (brk == 1)
-			break++;
+			break;
 	}
 	res = sig * res;
 	return (res);

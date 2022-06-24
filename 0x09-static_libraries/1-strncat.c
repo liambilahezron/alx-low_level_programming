@@ -20,7 +20,7 @@ char *_strncat(char *dest, char *src, int n)
 	{
 		if (dest[i] == '\0')
 		{
-			break++;
+			break;
 		}
 		m++;
 	}
