@@ -1,26 +1,29 @@
-#include <stdio.h>
-#include <stdlib.h>
-#define UNUSED(x)(void)(x)
+#include "main.h"
+
 /**
- * main - multiplies two numbers
- * @argc: int
- * @argv: array of strings
- * Return: sum
+ * main - multiplies two positive numbers
+ * @argc: n arguments
+ * @argv: args
+ * Return: int
  */
 int main(int argc, char *argv[])
 {
-	int i;
-	int j;
-
-	if (argc < 3)
+unsigned long mul;
+int i, j;
+	if (argc != 3)
+	{ printf("Error\n");
+	exit(98); }
+	for (i = 1; i < argc; i++)
 	{
-		printf("%s\n", "Error");
-		return (1);
+		for (j = 0; argv[i][j] != '\0'; j++)
+		{
+			if (argv[i][j] > 57 || argv[i][j] < 48)
+			{  printf("Error\n");
+			exit(98); }
+		}
+
 	}
-
-	i = atoi(argv[1]);
-	j = atoi(argv[2]);
-
-	printf("%d\n", i * j);
-	return (0);
+	mul = atol(argv[1]) *  atol(argv[2]);
+	printf("%lu\n", mul);
+return (0);
 }
