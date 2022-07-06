@@ -1,17 +1,17 @@
+#include "3-calc.h"
 #include <stdlib.h>
 #include <stdio.h>
-#include "3-calc.h"
 
 /**
- * main - main file
- * @argc: number of lines arguments
- * @argv: array of elements
- * Return: 0
- */
-
+  * main - ...
+  * @argc: ...
+  * @argv: ...
+  *
+  * Return: ...
+  */
 int main(int argc, char *argv[])
 {
-	int R;
+	int (*oprt)(int, int);
 
 	if (argc != 4)
 	{
@@ -19,8 +19,14 @@ int main(int argc, char *argv[])
 		exit(98);
 	}
 
-	R = (*get_op_func(argv[2]))(atoi(argv[1]), atoi(argv[3]));
-	printf("%d\n", R);
+	oprt = get_op_func(argv[2]);
 
+	if (!oprt)
+	{
+		printf("Error\n");
+		exit(99);
+	}
+
+	printf("%d\n", oprt(atoi(argv[1]), atoi(argv[3])));
 	return (0);
 }
