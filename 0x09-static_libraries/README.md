@@ -1,1 +1,1 @@
-my static library
+C static library
