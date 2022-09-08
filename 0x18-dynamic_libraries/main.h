@@ -1,7 +1,5 @@
-#ifndef DYNLIB
-#define DYNLIB
-
-#include <stdlib.h>
+#ifndef _DYN_LIBS_
+#define _DYN_LIBS_
 
 int _putchar(char c);
 int _islower(int c);
@@ -25,3 +23,5 @@ char *_strpbrk(char *s, char *accept);
 char *_strstr(char *haystack, char *needle);
 
 #endif
+Footer
+
